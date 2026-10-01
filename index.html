@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: #00bcd4;
+        }
+        .hero {
+            background: linear-gradient(135deg, #00bcd4, #3f51b5);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #eee;
+        }
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #3f51b5;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>A simple, modern and responsive website.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We create simple and beautiful websites for everyone.</p>
+    </section>
+
+    <section class="cards" id="services">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive designs for your website.</p>
+        </div>
+        <div class="card">
+            <h3>Development</h3>
+            <p>Clean and efficient HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="card">
+            <h3>Support</h3>
+            <p>Helpful support whenever you need it.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
